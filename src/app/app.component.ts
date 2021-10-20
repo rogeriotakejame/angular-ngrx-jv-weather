@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import * as moment from 'moment-timezone';
 
 @Component({
   selector: 'jv-root',
@@ -6,4 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+
+  constructor() {
+    moment.locale('pt-br');
+  }
 }
